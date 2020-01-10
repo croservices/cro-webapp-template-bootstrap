@@ -1,0 +1,17 @@
+<:macro bs-container(:$fluid)>
+  <div class="container<?$fluid>-fluid</?>">
+    <:body>
+  </div>
+</:>
+
+<:macro bs-row>
+  <div class="row">
+    <:body>
+  </div>
+</:>
+
+<:macro bs-col>
+  <div class="col">
+    <:body>
+  </div>
+</:>

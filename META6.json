@@ -1,0 +1,20 @@
+{
+  "name": "Cro::WebApp::Template::Bootstrap",
+  "description": "Cro template macros to make working with Bootstrap more convenient.",
+  "version": "0.1",
+  "perl": "6.*",
+  "auth": "Jonathan Worthington <jnthn@jnthn.net>",
+  "depends": [
+    "Cro::WebApp"
+  ],
+  "build-depends": [],
+  "test-depends": [],
+  "provides": {
+    "Cro::WebApp::Template::Bootstrap": "lib/Cro/WebApp/Template/Bootstrap.pm6"
+  },
+  "resources": [
+    "layout.crotmp"
+  ],
+  "license": "Artistic-2.0",
+  "source-url": "Write me!"
+}

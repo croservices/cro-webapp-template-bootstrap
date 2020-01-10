@@ -1,0 +1,4 @@
+<:use Cro::WebApp::Template::Bootstrap>
+<|bs-container>
+  <h1>Bootstrap!</h1>
+</|>

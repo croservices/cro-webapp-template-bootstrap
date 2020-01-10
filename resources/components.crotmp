@@ -1,0 +1,38 @@
+<:macro bs-alert($context, :$dismissible, :$animate)>
+  <div class="alert alert-<$context><?$dismissible> alert-dismissible</?><?$animate> fade show</?>" role="alert">
+    <:body>
+  </div>
+</:>
+
+<:sub bs-alert-dismiss(:$symbol, :$label)>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">
+      <?$symbol><$symbol></?>
+      <!$symbol>&times;</!>
+    </span>
+  </button>
+</:>
+
+<:macro bs-badge($context, :$sr, :$pill)>
+  <span class="badge badge-<$context><?$pill> badge-pill</?>">
+    <:body>
+    <?$sr><span class="sr-only"><$sr></span></?>
+  </span>
+</:>
+
+<:macro bs-breadcrumb()>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <:body>
+    </ol>
+  </nav>
+</:>
+
+<:macro bs-breadcrumb-item(:$active)>
+  <?$active>
+    <li class="breadcrumb-item active" aria-current="page"><:body></li>
+  </?>
+  <!$active>
+      <li class="breadcrumb-item"><:body></li>
+  </!>
+</:>
