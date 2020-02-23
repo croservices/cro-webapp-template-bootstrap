@@ -13,7 +13,10 @@
     "Cro::WebApp::Template::Bootstrap": "lib/Cro/WebApp/Template/Bootstrap.pm6"
   },
   "resources": [
-    "layout.crotmp"
+    "cdn.crotmp",
+    "layout.crotmp",
+    "components.crotmp",
+    "form.crotmp"
   ],
   "license": "Artistic-2.0",
   "source-url": "Write me!"

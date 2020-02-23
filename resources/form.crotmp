@@ -1,0 +1,9 @@
+<:sub bs-form($form, :$form-errors-text, :$submit-button-text, :$action)>
+  <&form($form, :input-group-class('form-group'), :input-control-class('form-control'),
+                :check-group-class('form-check'), :check-control-class('form-check-input'),
+                :check-label-class('form-check-label'), :submit-button-class('btn btn-primary'),
+                :novalidate, :was-validated-class('was-validated'), :is-invalid-class('is-invalid'),
+                :invalid-feedback-class('invalid-feedback'), :form-errors-class('alert alert-danger'),
+                :$form-errors-text, :help-class('form-text text-muted'), :$submit-button-text,
+                :$action)>
+</:>

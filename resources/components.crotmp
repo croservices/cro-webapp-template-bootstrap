@@ -1,3 +1,5 @@
+<!-- Alerts -->
+
 <:macro bs-alert($context, :$dismissible, :$animate)>
   <div class="alert alert-<$context><?$dismissible> alert-dismissible</?><?$animate> fade show</?>" role="alert">
     <:body>
@@ -13,12 +15,15 @@
   </button>
 </:>
 
+<!-- Badges -->
 <:macro bs-badge($context, :$sr, :$pill)>
   <span class="badge badge-<$context><?$pill> badge-pill</?>">
     <:body>
     <?$sr><span class="sr-only"><$sr></span></?>
   </span>
 </:>
+
+<!-- Breadcrumb trails -->
 
 <:macro bs-breadcrumb()>
   <nav aria-label="breadcrumb">
@@ -35,4 +40,37 @@
   <!$active>
       <li class="breadcrumb-item"><:body></li>
   </!>
+</:>
+
+<!-- Navbar -->
+
+<:macro bs-nav(:$dark)>
+ <nav class="navbar navbar-expand-lg <?$dark>navbar-dark bg-dark</?><!$dark>navbar-light bg-light</!>">
+   <:body>
+ </nav>
+</:>
+
+<:sub bs-navbar-brand($name, :$link)>
+  <a class="navbar-brand" href="<?$link><$link></?><!$link>/</!>"><$name></a>
+</:>
+
+<:macro bs-navbar-toggled>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <:body>
+  </div>
+</:>
+
+<:macro bs-navbar-nav>
+  <ul class="navbar-nav mr-auto">
+    <:body>
+  </ul>
+</:>
+
+<:sub bs-nav-item-link($text, $link, :$active)>
+  <li class="nav-item<?$active> active</?>">
+    <a class="nav-link" href="<$link>"><$text><?$active> <span class="sr-only">(current)</span></?></a>
+  </li>
 </:>

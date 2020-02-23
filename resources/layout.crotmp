@@ -10,8 +10,8 @@
   </div>
 </:>
 
-<:macro bs-col>
-  <div class="col">
+<:macro bs-col(:$n, :$sm, :$md, :$lg, :$xl)>
+  <div class="col<?$sm>-sm</?><?$md>-md</?><?$lg>-lg</?><?$xl>-xl</?><?$n>-<$n></?>">
     <:body>
   </div>
 </:>
