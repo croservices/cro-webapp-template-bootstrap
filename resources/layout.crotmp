@@ -1,5 +1,5 @@
-<:macro bs-container(:$fluid)>
-  <div class="container<?$fluid>-fluid</?>">
+<:macro bs-container(:$fluid, :$id)>
+  <div <?$id>id="<$id>"</?> class="container<?$fluid>-fluid</?>">
     <:body>
   </div>
 </:>
